@@ -3,9 +3,9 @@
 以下の処理を main メソッドに持ち、以下に示すプログラム実行結果となる BooleanType クラスを作成しなさい。
 
 - boolean 型の変数「hasElephantLongNose」（象の鼻は長いか？）に `true` を代入
-- boolean 型の変数「isJapanLargerThanAmerica」（日本はアメリカより大きいか？）に `false` を代入
-
 - 変数 `hasElephantLongNose` の内容を表示
+
+- boolean 型の変数「isJapanLargerThanAmerica」（日本はアメリカより大きいか？）に `false` を代入
 - 変数 `isJapanLargerThanAmerica` の内容を表示
 
 ### プログラム実行結果
@@ -130,7 +130,7 @@ https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/03
 
 ## ミニ課題 7: float 型（時間: 20 分）
 
-以下の処理を main メソッドに持ち、以下に示すプログラム実行結果となる LongType クラスを作成しなさい。
+以下の処理を main メソッドに持ち、以下に示すプログラム実行結果となる FloatType クラスを作成しなさい。
 
 - float 型の変数「minFloat」に float 型のとりうる最小値を代入
 - float 型の変数「maxFloat」に float 型のとりうる最大値を代入
@@ -155,7 +155,7 @@ https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/03
 
 ## ミニ課題 8: char 型（時間: 20 分）
 
-以下の処理を main メソッドに持ち、以下に示すプログラム実行結果となる DoubleType クラスを作成しなさい。
+以下の処理を main メソッドに持ち、以下に示すプログラム実行結果となる CharType クラスを作成しなさい。
 
 - char 型の変数「alphabet」に `E` を代入
 - char 型の変数「number」に `9` を代入
