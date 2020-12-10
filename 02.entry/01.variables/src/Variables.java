@@ -6,9 +6,9 @@ public class Variables {
         int myAge = 20;
         int myWeightKg = 670;
 
-        System.out.printf("ぼくのパパの年齢は %d です.%n", fatherAge);
-        System.out.printf("ぼくのママの年齢は %d です.%n", motherAge);
-        System.out.printf("ぼくの年齢は %d です.%n", myAge);
+        System.out.printf("ぼくのパパの年齢は %d 歳です.%n", fatherAge);
+        System.out.printf("ぼくのママの年齢は %d 歳です.%n", motherAge);
+        System.out.printf("ぼくの年齢は %d 歳です.%n", myAge);
         System.out.println();
         System.out.printf("ぼくの体重は %dKg です.%n", myWeightKg);
     }
