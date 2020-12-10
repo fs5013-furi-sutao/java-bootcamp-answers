@@ -1,14 +1,27 @@
-## Getting Started
+## ミニ課題（時間: 20 分）
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+main メソッドに以下の 2 つの処理を記述して、プログラム実行結果が以下に示したようになるようにプログラムを作成しなさい。
 
-## Folder Structure
+### 1. 変数宣言、変数への代入処理:
 
-The workspace contains two folders by default, where:
+- 変数「父親の年齢」に 42 を代入
+- 変数「母の年齢」に 38 を代入
+- 変数「ぼくの年齢」に 20 を代入
+- 変数「ぼくの体重（kg）」に 670 を代入
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### 2. 変数に代入した数値の表示処理:
 
-## Dependency Management
+- 「父親の年齢」を表示
+- 「母の年齢」を表示
+- 「ぼくの年齢」を表示
+- 「ぼくの体重（kg）」を表示
 
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+### プログラム実行結果
+
+```
+ぼくのパパの年齢は 42 です.
+ぼくのママの年齢は 38 です.
+ぼくの年齢は 20 です.
+
+ぼくの体重は 670Kg です.
+```
