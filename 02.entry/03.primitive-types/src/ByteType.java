@@ -1,4 +1,4 @@
-public class ByteTape {
+public class ByteType {
     public static void main(String[] args) {
 
         byte minByte = Byte.MIN_VALUE;
