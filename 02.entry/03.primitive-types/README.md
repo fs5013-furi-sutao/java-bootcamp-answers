@@ -68,14 +68,14 @@ https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/03
 - int 型の変数「minInt」に int 型のとりうる最小値を代入
 - int 型の変数「maxInt」に int 型のとりうる最大値を代入
 
-- 変数 `minShort` の内容を表示
-- 変数 `maxShort` の内容を表示
+- 変数 `minInt` の内容を表示
+- 変数 `maxInt` の内容を表示
 
 ### プログラム実行結果
 
 ```
-int 型の最小値 = -32768
-int 型の最大値 = 32767
+int 型の最小値 = -2147483648
+int 型の最大値 = 2147483647
 ```
 
 ### 解答例
