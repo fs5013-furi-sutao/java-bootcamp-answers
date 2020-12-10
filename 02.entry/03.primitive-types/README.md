@@ -14,7 +14,7 @@
 
 ### 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/01.variables/src/Variables.java
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/03.primitive-types/src/BooleanType.java
 
 ## ミニ課題 2（時間: 20 分）
 
@@ -32,4 +32,4 @@ byte 型の最大値 = 127
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/01.variables/src/Variables.java
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/03.primitive-types/src/ByteTape.java
