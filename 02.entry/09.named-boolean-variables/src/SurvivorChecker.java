@@ -8,9 +8,9 @@ public class SurvivorChecker {
         boolean isLive = rand.nextBoolean();
 
         if (isLive) {
-            System.out.printf("%s は生きてるよ.", myName, isLive);
+            System.out.printf("%s は生きてるよ.", myName);
         } else {
-            System.out.printf("%s は死んでるよ.", myName, isLive);
+            System.out.printf("%s は死んでるよ.", myName);
         }
     }
 }

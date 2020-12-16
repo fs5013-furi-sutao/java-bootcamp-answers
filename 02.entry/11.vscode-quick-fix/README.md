@@ -21,4 +21,4 @@ main メソッドに以下の 3 つの処理を記述して、プログラム実
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/09.named-boolean-variables/src/Survivor.java
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/11.11-vscode-quick-fix/src/QuickFixTester.java
