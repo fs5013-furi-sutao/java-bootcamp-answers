@@ -1,30 +1,53 @@
 ## ミニ課題（時間: 20 分）
 
-以下のプログラム QuickFixTester.java を、VSCode の Quick Fix 機能を使って、コンパイルエラーを修正して、プログラムを実行できるようにしなさい
+main メソッドに以下の 4 つの処理を記述して、プログラム実行結果が以下に示したようになるように OverflowVerification クラスを作成しなさい。
 
-ただし、修正するにあたって Quick Fix 機能のみを使い、文字の削除・入力でコンパイルエラー部分を修正しないこと
+### 1. 変数宣言、変数への代入処理:
 
-```java title=src/QuickFixTester.java
-public class QuickFixTester {
-    public static void main(String[] args) {
+- 変数「a」に 「12」を代入する
+- 変数「b」に 「5」を代入する
 
-        rand = new Random();
-        myName = "山本一郎";
-        boolean isLive = rand.nextBoolean();
+### 2. 変数に代入した数値の表示処理:
 
-        snowMessage(myName, isLive);
-    }
+- 変数 `a` と `b` の内容を表示する
 
-    private static void showMessage(String name, boolean isLive) {
-        if (isLive) {
-            System.out.println("%s は生きてるよ.", name);
-        } else {
-            System.out.println("%s は死んでるよ.", name);
-        }
-    }
-}
+### 3. 加算処理:
+
+- 変数 `a` に `b` を足した結果を表示する
+
+### 4. 減算処理:
+
+- 変数 `a` から `b` を引いた結果を表示する
+
+### 5. 乗算演算子:
+
+- 変数 `a` を `b` 掛けた結果を表示する
+
+### 6. 商算演算子:
+
+- 変数 `a` を `b` で割った結果を表示する
+
+### 7. 余算演算子:
+
+- 変数 `a` を `b` で割った余りを表示する
+
+### 8. 文字列結合:
+
+- 変数 `a` と `b` を算術演算子で結合して表示する
+
+### プログラム実行結果
+
+```
+a = 12, b = 5
+
+a + b = 17
+a - b = 7
+a * b = 60
+a / b = 2
+a % b = 2
+"a" + "b" = 125
 ```
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/11.11-vscode-quick-fix/src/QuickFixTester.java
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/17.arithmetic-operator/src/ArithmeticOperator.java
