@@ -1,22 +1,28 @@
 ## ミニ課題（時間: 20 分）
 
-main メソッドに以下の 3 つの処理を記述して、プログラム実行結果が以下に示した結果になるように SurvivorChecker クラスを作成しなさい
+以下のプログラム QuickFixTester.java を、VSCode の Quick Fix 機能を使って、コンパイルエラーを修正して、プログラムを実行できるようにしなさい
 
-- Random クラスのインスタンスを作成
-- 変数「ぼくの名前」に「山本一郎」を代入
-- 「生きているかどうか」をあらわす変数に Random インスタンスからランダムに生成した true もしくは false を代入
-- 生きていれば「〇〇 は生きてるよ.」を表示
-- 生きていなければ「〇〇 は死んでるよ.」を表示
+ただし、修正するにあたって Quick Fix 機能のみを使い、文字の削除・入力でコンパイルエラー部分を修正しないこと
 
-### プログラム実行結果
+```java title=src/QuickFixTester.java
+public class QuickFixTester {
+    public static void main(String[] args) {
 
-実行結果例 1 回目:
-```
-山本一郎 は生きてるよ.
-```
-実行結果例 2 回目:
-```
-山本一郎 は死んでるよ.
+        rand = new Random();
+        myName = "山本一郎";
+        boolean isLive = rand.nextBoolean();
+
+        snowMessage(myName, isLive);
+    }
+
+    private static void showMessage(String name, boolean isLive) {
+        if (isLive) {
+            System.out.println("%s は生きてるよ.", name);
+        } else {
+            System.out.println("%s は死んでるよ.", name);
+        }
+    }
+}
 ```
 
 ## 解答例
