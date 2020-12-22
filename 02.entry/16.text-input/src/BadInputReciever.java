@@ -10,6 +10,7 @@ public class BadInputReciever {
         try {
             int number = stdin.nextInt();
             System.out.printf("入力された数字は %d です.", number);
+            
         } catch (InputMismatchException e) {
             System.out.println("数字以外の文字が入力されました.");
         }
