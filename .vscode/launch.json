@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch WeightPrintMessageBuilder",
+            "request": "launch",
+            "mainClass": "WeightPrintMessageBuilder",
+            "projectName": "java-bootcamp-answers_9717c6ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch AgePrintMessageBuilder",
+            "request": "launch",
+            "mainClass": "AgePrintMessageBuilder",
+            "projectName": "java-bootcamp-answers_9717c6ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch NamePrintMessageBuilder",
+            "request": "launch",
+            "mainClass": "NamePrintMessageBuilder",
+            "projectName": "java-bootcamp-answers_9717c6ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZeroPaddingFormatter",
+            "request": "launch",
+            "mainClass": "ZeroPaddingFormatter",
+            "projectName": "java-bootcamp-answers_9717c6ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch PercentFormatter",
+            "request": "launch",
+            "mainClass": "PercentFormatter",
+            "projectName": "java-bootcamp-answers_9717c6ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch YenFormatter",
+            "request": "launch",
+            "mainClass": "YenFormatter",
+            "projectName": "java-bootcamp-answers_9717c6ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringFormatter",
+            "request": "launch",
+            "mainClass": "StringFormatter",
+            "projectName": "java-bootcamp-answers_9717c6ec"
+        },
+        {
+            "type": "java",
             "name": "Launch CommentTraining",
             "request": "launch",
             "mainClass": "CommentTraining",
