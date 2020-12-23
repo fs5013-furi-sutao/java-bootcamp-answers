@@ -1,8 +1,3 @@
-## ミニ課題（時間: 20 分）
-
-以下のクラス LargestOfThreeNumbersFinder について、不要なコメントアウトを削除しなさい
-
-```java title=src/LargestOfThreeNumbersFinder.java
 import java.util.Scanner;
 
 public class LargestOfThreeNumbersFinder {
@@ -67,17 +62,3 @@ public class LargestOfThreeNumbersFinder {
         return numbers[1] >= numbers[0] && numbers[1] >= numbers[2];
     }
 }
-```
-
-### LargestOfThreeNumbersFinder の実行結果
-
-```
-1 番目の数字を入力してください: 3
-2 番目の数字を入力してください: 6
-3 番目の数字を入力してください: 1
-2番目に入力した数字が一番大きい
-```
-
-## 解答例
-
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/24.do-not-leave-unnecessary-comment-out/src/LargestOfThreeNumbersFinder.java

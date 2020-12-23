@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LargestOfThreeNumbersFinder",
+            "request": "launch",
+            "mainClass": "LargestOfThreeNumbersFinder",
+            "projectName": "java-bootcamp-answers_9717c6ec"
+        },
+        {
+            "type": "java",
             "name": "Launch WeightPrintMessageBuilder",
             "request": "launch",
             "mainClass": "WeightPrintMessageBuilder",
