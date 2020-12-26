@@ -4,7 +4,7 @@ public class VariousArrays {
         final int INDEX_TO_WATCH = 2;
 
         int[] intEmptyArray = new int[3];
-        
+
         System.out.printf("intEmptyArray の %d 番目の要素 = %d %n"
             , INDEX_TO_WATCH, intEmptyArray[INDEX_TO_WATCH]);
 
@@ -27,7 +27,6 @@ public class VariousArrays {
             "すきやばし次郎",
             "南島三郎",
             "伊藤四郎",
-            "野田五郎",
         };
     
         System.out.printf("namesArray の %d 番目の要素 = %s %n"
