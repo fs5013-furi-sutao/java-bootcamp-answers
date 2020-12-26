@@ -1,49 +1,70 @@
 ## ミニ課題（時間: 20 分）
 
-main メソッドに以下の 2 つの処理を記述して、プログラム実行結果が以下に示したようになるように VariousArrays クラスを作成しなさい。
+main メソッドに以下の 3 つの処理を記述して、プログラム実行結果が以下に示したようになるように MultiDemendionalArray クラスを作成しなさい。
 
 ### 1. 定数宣言:
 
-- 定数「INDEX_TO_WATCH」を宣言し、「2」を代入する
+- 定数「HORIZONTAL_INDEX」（水平方向のインデックス）を宣言し、「2」を代入する
+- 定数「VERTICAL_INDEX」（垂直方向のインデックス）を宣言し、「1」を代入する
 
 ### 2. int 配列の初期化と表示処理:
 
-- int 配列「intEmptyArray」を 3 つの要素数で初期化
-- 「intEmptyArray」の「INDEX_TO_WATCH」番目の要素を表示
+- int 配列「dimArray」に以下の表の内容になるように要素を代入して宣言
 
-### 3. String 配列の初期化と表示処理:
+<table>
+  <tr style="border: none; background: none;">
+    <td style="border: none; background: none;"> </td>
+    <td style="border: none; background: none;"> </td>
+    <td style="border: none; background: none;">X 方向 →</td>
+  </tr>
 
-- String 配列「strEmptyArray」を 5 つの要素数で初期化
-- 「strEmptyArray」の「INDEX_TO_WATCH」番目の要素を表示
+  <tr style="border: none; background: none;">
+    <td style="border: none; background: none;"> </td>
+    <td style="border: none; background: none;"> </td>
+    <td style="width: 6em; border: none; background: none;">0</td>
+    <td style="width: 6em; border: none; background: none;">1</td>
+    <td style="width: 6em; border: none; background: none;">2</td>
+    <td style="width: 6em; border: none; background: none;">3</td>
+  </tr>
 
-### 4. String 配列の初期化と表示処理:
+  <tr style="border: none; background: none;">
+    <td style="width: 1em; border: none; background: none;">Y 方向 ↓</td>
+    <td style="width: 1em; border: none; background: none;">0</td>
+    <td style="width: 6em; font-weight: bold; ">1</td>
+    <td style="width: 6em; font-weight: bold; ">2</td>
+    <td style="width: 6em; font-weight: bold; ">3</td>
+    <td style="width: 6em; font-weight: bold; ">4</td>
+  </tr>
 
-- int 配列「idArray」を 3 つの要素数で初期化
-- 「idArray」の 0 番目に「100」を代入
-- 「idArray」の 1 番目に「101」を代入
-- 「idArray」の 2 番目に「102」を代入
-- 「idArray」の「INDEX_TO_WATCH」番目の要素を表示
+  <tr style="border: none; background: none;">
+    <td style="width: 1em; border: none; background: none;"> </td>
+    <td style="width: 1em; border: none; background: none;">1</td>
+    <td style="width: 6em; font-weight: bold; ">5</td>
+    <td style="width: 6em; font-weight: bold; ">6</td>
+    <td style="width: 6em; font-weight: bold; color: #ff0000;">7</td>
+    <td style="width: 6em; font-weight: bold; ">8</td>
+  </tr>
 
-### 5. String 配列の初期化と表示処理:
+  <tr style="border: none; background: none;">
+    <td style="width: 1em; border: none; background: none;"> </td>
+    <td style="width: 1em; border: none; background: none;">2</td>
+    <td style="width: 6em; font-weight: bold; ">9</td>
+    <td style="width: 6em; font-weight: bold; ">10</td>
+    <td style="width: 6em; font-weight: bold; ">11</td>
+    <td style="width: 6em; font-weight: bold; ">12</td>
+  </tr>
+</table>
 
-- String 配列「namesArray」に以下の 5 つの要素を代入して宣言
-- 一堂零
-- 山本一郎
-- すきやばし次郎
-- 南島三郎
-- 伊藤四郎
-- 野田五郎
-- 「namesArray」の「INDEX_TO_WATCH」番目の要素を表示
+### 3. 多次元配列の指定要素の表示処理:
 
-### プログラム実行結果
+- 「dimArray」の横に「HORIZONTAL_INDEX」番目、縦に「VERTICAL_INDEX」番目の要素を表示
+
+### MultiDemendionalArray の実行結果
 
 ```
-intEmptyArray の 2 番目の要素 = 0
-strEmptyArray の 2 番目の要素 = null
-idArray の 2 番目の要素 = 102
-namesArray の 2 番目の要素 = すきやばし次郎
+水平方向(X)に 2, 垂直方向(Y)に 1 のインデックスにある値 => 7
 ```
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/27.array/src/VariousArrays.java
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/28.multidimendional-array/src/MultiDemendionalArray.java
