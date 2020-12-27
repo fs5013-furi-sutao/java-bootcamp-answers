@@ -7,10 +7,14 @@ public class LeapYearChecker {
 
         for (int year : targetYears) {
 
-            boolean isLeap = isLeapYear(year);
-            System.out.printf("西暦 %4d 年は、うるう年か？ => %b %n", year, isLeap);
-        }
+            boolean isLeapYear = isLeapYear(year);
 
+            if (isLeapYear) {
+                System.out.printf("西暦 %4d 年は、うるう年です. %n", year);
+                continue;
+            }
+            System.out.printf("西暦 %4d 年は、うるう年ではありません. %n", year);
+        }
     }
 
     private static boolean isLeapYear(int year) {
@@ -18,7 +22,6 @@ public class LeapYearChecker {
         if (year % 4 == 0) {
 
             if (year % 100 == 0) {
-
                 if (year % 400 == 0) return true;
                 
                 return false;
@@ -29,5 +32,4 @@ public class LeapYearChecker {
 
         return false;
     }
-
 }
