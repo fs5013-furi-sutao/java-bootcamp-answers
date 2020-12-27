@@ -1,70 +1,66 @@
 ## ミニ課題（時間: 20 分）
 
-main メソッドに以下の 3 つの処理を記述して、プログラム実行結果が以下に示したようになるように MultiDemendionalArray クラスを作成しなさい。
+main メソッドに以下の 5 つの処理を記述して、プログラム実行結果が以下に示したようになるように ArrayListManager クラスを作成しなさい。
 
-### 1. 定数宣言:
+### 1. ArrayList の初期化:
 
-- 定数「HORIZONTAL_INDEX」（水平方向のインデックス）を宣言し、「2」を代入する
-- 定数「VERTICAL_INDEX」（垂直方向のインデックス）を宣言し、「1」を代入する
+- List 型の変数「list」を宣言し、ArrayList のインスタンスを代入
 
-### 2. int 配列の初期化と表示処理:
+### 2. ArrayList インスタンスが空かどうかの判定結果
 
-- int 配列「dimArray」に以下の表の内容になるように要素を代入して宣言
+- 変数「isListEmpty」を宣言し、「list」が空かどうかの判定結果を代入
+- 「isListEmpty」の内容を表示
 
-<table>
-  <tr style="border: none; background: none;">
-    <td style="border: none; background: none;"> </td>
-    <td style="border: none; background: none;"> </td>
-    <td style="border: none; background: none;">X 方向 →</td>
-  </tr>
+### 3. ArrayList インスタンスに要素を追加
 
-  <tr style="border: none; background: none;">
-    <td style="border: none; background: none;"> </td>
-    <td style="border: none; background: none;"> </td>
-    <td style="width: 6em; border: none; background: none;">0</td>
-    <td style="width: 6em; border: none; background: none;">1</td>
-    <td style="width: 6em; border: none; background: none;">2</td>
-    <td style="width: 6em; border: none; background: none;">3</td>
-  </tr>
+- 「list」に要素「000」を追加
+- 「list」に要素「111」を追加
+- 「list」に要素「222」を追加
 
-  <tr style="border: none; background: none;">
-    <td style="width: 1em; border: none; background: none;">Y 方向 ↓</td>
-    <td style="width: 1em; border: none; background: none;">0</td>
-    <td style="width: 6em; font-weight: bold; ">1</td>
-    <td style="width: 6em; font-weight: bold; ">2</td>
-    <td style="width: 6em; font-weight: bold; ">3</td>
-    <td style="width: 6em; font-weight: bold; ">4</td>
-  </tr>
+### 4. ArrayList インスタンスの要素数を表示
 
-  <tr style="border: none; background: none;">
-    <td style="width: 1em; border: none; background: none;"> </td>
-    <td style="width: 1em; border: none; background: none;">1</td>
-    <td style="width: 6em; font-weight: bold; ">5</td>
-    <td style="width: 6em; font-weight: bold; ">6</td>
-    <td style="width: 6em; font-weight: bold; color: #ff0000;">7</td>
-    <td style="width: 6em; font-weight: bold; ">8</td>
-  </tr>
+- 変数「listSize」を宣言し、「list」の要素数を代入
+- 「listSize」の内容を表示
 
-  <tr style="border: none; background: none;">
-    <td style="width: 1em; border: none; background: none;"> </td>
-    <td style="width: 1em; border: none; background: none;">2</td>
-    <td style="width: 6em; font-weight: bold; ">9</td>
-    <td style="width: 6em; font-weight: bold; ">10</td>
-    <td style="width: 6em; font-weight: bold; ">11</td>
-    <td style="width: 6em; font-weight: bold; ">12</td>
-  </tr>
-</table>
+### 5. ArrayList インスタンスに対象要素が含まれるかの確認
 
-### 3. 多次元配列の指定要素の表示処理:
+- 変数「keyword」を宣言し、「111」を代入
+- 変数「hasKeyword」を宣言し、「list」の要素に「keyword」が含まれるかどうかの判定結果を代入
+- 「hasKeyword」の内容を表示
 
-- 「dimArray」の横に「HORIZONTAL_INDEX」番目、縦に「VERTICAL_INDEX」番目の要素を表示
+### 6.　 ArrayList インスタンスの指定インデックスの要素を取得
 
-### MultiDemendionalArray の実行結果
+- 変数「targetIndex」を宣言し、「2」を代入
+- 変数「target」を宣言し、「list」の targetIndex 番目の要素を代入 -「target」の内容を表示
+
+### 7. ArrayList インスタンスのどのインデックスに指定要素があるのかを取得
+
+- 「target」に「000」を代入
+- 「targetIndex」に、list のどのインデックスに target にあるのかを代入
+- 「targetIndex」の内容を表示
+
+### 8. ArrayList インスタンスの要素の更新と削除
+
+- list のインデックス 2 の要素を「UPDATE」に上書き
+- list のインデックス 0 の要素を削除
+
+### 9. ArrayList インスタンスのすべての要素を表示
+
+- list のすべての要素を表示
+
+### ArrayListManager の実行結果
 
 ```
-水平方向(X)に 2, 垂直方向(Y)に 1 のインデックスにある値 => 7
+list の要素が空かどうか => true
+list の要素数 => 3
+list の要素に 111 があるかどうか => true
+list の 2 番目にある要素 => 222
+list の要素「000」があるのは => 0 番目
+
+list の 0 番目の要素 => 111
+list の 1 番目の要素 => UPDATE
 ```
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/28.multidimendional-array/src/MultiDemendionalArray.java
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/29.array-list/src/ArrayListManager.java
