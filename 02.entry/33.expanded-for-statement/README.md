@@ -16,7 +16,7 @@
 
 https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/33.expanded-for-statement/src/ArrayElementsAdder.java
 
-## ミニ課題 01: 拡張 for 文で ArrayList を使う（時間: 20 分）
+## ミニ課題 02: 拡張 for 文で ArrayList を使う（時間: 20 分）
 
 以下の要素を持った ArrayList「list」のすべて要素を表示する処理を main メソッドに持つ ListElementPrinter クラスを作成しなさい
 
