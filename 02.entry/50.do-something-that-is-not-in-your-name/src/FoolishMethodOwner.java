@@ -24,9 +24,9 @@ public class FoolishMethodOwner {
     private void setIsLucky(int num) {
         if (num % 2 == 0) {
             this.isLucky = true;
-        } else {
-            this.isLucky = false;
+            return;
         }
+        this.isLucky = false;
     }
 
     private void showIsLucky(int num) {
