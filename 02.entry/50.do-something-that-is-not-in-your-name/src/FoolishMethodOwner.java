@@ -34,6 +34,8 @@ public class FoolishMethodOwner {
             System.out.printf("%2d => 幸運です. %n", num);
             return;
         }
-        System.out.printf("%2d => 幸運ではありません. %n", num);
+        System.out.printf(
+            "%2d => 幸運ではありません. %n", num
+        );
     }
 }
