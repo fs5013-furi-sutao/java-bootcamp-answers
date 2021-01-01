@@ -10,26 +10,24 @@ public class LeapYearChecker {
             boolean isLeapYear = isLeapYear(year);
 
             if (isLeapYear) {
-                System.out.printf("西暦 %4d 年は、うるう年です. %n", year);
+                System.out.printf(
+                    "西暦 %4d 年は、うるう年です. %n", year
+                );
+                
                 continue;
             }
-            System.out.printf("西暦 %4d 年は、うるう年ではありません. %n", year);
+
+            System.out.printf(
+                "西暦 %4d 年は、うるう年ではありません. %n", 
+                year
+            );
         }
     }
 
     private static boolean isLeapYear(int year) {
-
-        if (year % 4 == 0) {
-
-            if (year % 100 == 0) {
-                if (year % 400 == 0) return true;
-                
-                return false;
-            }
-
-            return  true;
-        }
-
-        return false;
+        boolean isFourthYear = ( year % 4) == 0;
+        boolean isHundredthYear = (year % 100) == 0;
+        boolean isFourHundredthYear = (year % 400) == 0;
+        return ((isFourthYear && !isHundredthYear) || isFourHundredthYear);
     }
 }
