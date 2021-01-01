@@ -106,4 +106,4 @@ public class AntiMagicNumber {
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/03.primary/02.dont-use-magic-number/src/AntiMagicNumber.java
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/03.primary/27.array/src/AntiMagicNumber.java
