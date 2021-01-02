@@ -53,11 +53,13 @@ class Student {
     }
 
     public boolean isValidFirstName() {
-        return this.firstName != null && !this.firstName.isEmpty();
+        return this.firstName != null 
+            && !this.firstName.isEmpty();
     }
 
     public boolean isValidLastName() {
-        return this.lastName != null && !this.lastName.isEmpty();
+        return this.lastName != null 
+            && !this.lastName.isEmpty();
     }
 }
 
@@ -71,22 +73,36 @@ class StudentList {
     public void addStudent(Student student) {
         if (!student.isValidFirstName()) {
 
-            String errorMessage = String.format("ID %d: %s%s は登録できません. %n" + " => 姓が空です. %n", student.id,
-                    student.firstName, student.lastName);
+            String errorMessage = 
+                String.format(
+                    "ID %d: %s%s は登録できません. %n" 
+                    + " => 姓が空です. %n", 
+                    student.id,
+                    student.firstName, 
+                    student.lastName);
 
             throw new AppException(errorMessage);
         }
 
         if (!student.isValidLastName()) {
 
-            String errorMessage = String.format("ID %d: %s%s は登録できません. %n" + " => 名が空です. %n", student.id,
-                    student.firstName, student.lastName);
+            String errorMessage = 
+                String.format(
+                    "ID %d: %s%s は登録できません. %n" 
+                    + " => 名が空です. %n", 
+                    student.id,
+                    student.firstName, 
+                    student.lastName);
 
             throw new AppException(errorMessage);
         }
 
         if (student.isValidLastName()) {
-            System.out.printf("ID %d: %s%s を登録しました. %n%n", student.id, student.firstName, student.lastName);
+            System.out.printf(
+                "ID %d: %s%s を登録しました. %n%n", 
+                student.id, 
+                student.firstName, 
+                student.lastName);
 
             this.students.add(student);
         }
@@ -96,7 +112,12 @@ class StudentList {
         System.out.println("登録者一覧を表示します");
         System.out.println("-----");
         for (Student student : this.students) {
-            System.out.printf("ID %d: %s%s %n", student.id, student.firstName, student.lastName);
+            System.out.printf(
+                "ID %d: %s%s %n", 
+                student.id, 
+                student.firstName, 
+                student.lastName
+            );
         }
     }
 }
