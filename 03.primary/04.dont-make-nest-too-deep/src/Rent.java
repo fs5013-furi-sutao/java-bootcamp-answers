@@ -15,12 +15,12 @@ public class Rent {
                 "山口次郎", "aa", "bb", "15", "500"
             );
 
-        app.doRegister(yamamotoInfo);
-        app.doRegister(yamadaInfo);
-        app.doRegister(yamaguchiInfo);
+        app.doRegistration(yamamotoInfo);
+        app.doRegistration(yamadaInfo);
+        app.doRegistration(yamaguchiInfo);
     }
 
-    private void doRegister(RentalInfo info) {
+    private void doRegistration(RentalInfo info) {
 
         System.out.println("-----");
         System.out.printf(
@@ -28,7 +28,7 @@ public class Rent {
         );
 
         if (isValid(info)) {
-            info.registRentalProperty();
+            info.registerRentalProperty();
         } else {
             System.out.println(
                 "賃貸情報を登録できませんでした."
@@ -130,7 +130,7 @@ class RentalInfo {
         this.monthlyRent = monthlyRent;
     }
 
-    public void registRentalProperty() {
+    public void registerRentalProperty() {
         System.out.println("賃貸情報を登録しました.");
     }
 }
