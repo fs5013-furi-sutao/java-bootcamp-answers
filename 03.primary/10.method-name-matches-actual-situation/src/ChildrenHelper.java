@@ -41,10 +41,12 @@ class Child {
         this.gender = gender;
     }
 
+    public String getFullNameWithHonorificTitle() {
+        return getFullName() + getHonorificTitle();
+    }
+
     public String getFullName() {
-        return this.firstName 
-            + this.lastName 
-            + getHonorificTitle();
+        return this.firstName + this.lastName;
     }
 
     public String getHonorificTitle() {
