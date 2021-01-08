@@ -6,8 +6,8 @@ public class House {
     private String color;
     private String address;
     private boolean isDoorOpen;
-    private boolean isDoorOpenNow;
-    private boolean isDoorCloseNow;
+    private boolean isTryingToOpenDoorNow;
+    private boolean isTryingToCloseDoorNow;
 
     public House(
             String name, 
@@ -23,7 +23,7 @@ public class House {
 
     public void openDoor() {
         showAction("%s さん家のドアを開けます %n");
-        isDoorOpenNow = true;
+        isTryingToOpenDoorNow = true;
         logCanOpen();
         isDoorOpen = true;
         clearDoorNowStatus();
@@ -31,25 +31,25 @@ public class House {
 
     public void closeDoor() {
         showAction("%s さん家のドアを閉めます %n");
-        isDoorCloseNow = true;
+        isTryingToCloseDoorNow = true;
         logCanOpen();
         isDoorOpen = false;
         clearDoorNowStatus();
     }
 
     private void logCanOpen() {
-        if (this.isDoorOpenNow && this.isDoorOpen) {
+        if (this.isTryingToOpenDoorNow && this.isDoorOpen) {
             System.out.println(" => [INFO] 既にドアは開いてます");
         }
-        if (this.isDoorCloseNow && !this.isDoorOpen) {
+        if (this.isTryingToCloseDoorNow && !this.isDoorOpen) {
             System.out.println(" => [INFO] 既にドアは閉まってます");
         }
         clearDoorNowStatus();
     }
 
     private void clearDoorNowStatus() {
-        isDoorOpenNow = false;
-        isDoorCloseNow = false;
+        isTryingToOpenDoorNow = false;
+        isTryingToCloseDoorNow = false;
     }
 
     private void showAction(String message) {
