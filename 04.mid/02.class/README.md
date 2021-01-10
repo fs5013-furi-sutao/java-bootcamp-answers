@@ -37,4 +37,4 @@ Java のクラスとは何かを Web で調べてください。検索キーワ�
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/02.class/src/jp/freestyles/mid/classes
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/02.class/src/mid/classes

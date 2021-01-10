@@ -1,4 +1,4 @@
-package jp.freestyles.mid.instance.method.dog;
+package mid.instance.method.dog;
 
 public class Dog {
     

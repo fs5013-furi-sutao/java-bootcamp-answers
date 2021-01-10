@@ -1,4 +1,4 @@
-package jp.freestyles.mid.instance.method.dog;
+package mid.classes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,11 @@ public class DogOwner {
         dogs.add(new Dog("山田太朗", 2, "チワワ"));
 
         for (Dog dog : dogs) {
-            dog.showDetails();
+            System.out.printf("%s の %s は %d 歳です. %n",
+                dog.getDogType(), 
+                dog.getName(), 
+                dog.getAge()
+            );
         }
     }
 }

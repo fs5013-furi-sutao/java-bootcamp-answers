@@ -5,14 +5,14 @@
 Java のインスタンスメソッドとは何かを Web で調べてください。検索キーワードは、「 [java インスタンスメソッド](https://www.google.com/search?q=java+インスタンスメソッド) 」です。
 3 種類ぐらい説明記事やサンプルコードを読んで、Java のインスタンスメソッドとは何か、インスタンスメソッドの使い方をつかみましょう。
 
-## ミニ課題 01: リファクタリング（時間: 20 分）
+## 練習問題 01: リファクタリング（時間: 20 分）
 
 次の 2 つのクラスについて、Dog インスタンスの詳細を表示する処理をインスタンスメソッドにするよう、リファクタリングしなさい
 
 ### DogOwner.java
 
 ```java
-package jp.freestyles.mid.instance.method;
+package mid.instance.method;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,9 +36,7 @@ public class DogOwner {
 }
 ```
 
-### Dog {
-
-.java
+### Dog.java
 
 ```java
 package jp.freestyles.mid.instance.method;
@@ -83,14 +81,14 @@ public class Dog {
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/03.instance-method/src/jp/freestyles/mid/instance/method/dog
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/03.instance-method/src/mid/instance/method/dog
 
-## ミニ課題 02: 依存関係を持つインスタンスメソッド（時間: 20 分）
+## 練習問題 02: 依存関係を持つインスタンスメソッド（時間: 20 分）
 
 実行結果のようになる、次の 2 つのクラスを作成しなさい
 
-1. DogOwner クラス
-2. Dog クラス
+1. HouseKeeper クラス
+2. House クラス
 
 ### 1. HouseKeeper クラス
 
@@ -114,8 +112,8 @@ https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/03.i
 - 色: color
 - 住所: address
 - ドアが開いているかどうか: isDoorOpen
-- 今からドアを開けるところかどうか: isDoorOpenNow
-- 今からドアを閉めるところかどうか: isDoorCloseNow
+- 今からドアを開けるところかどうか: isTryingToOpenDoorNow
+- 今からドアを閉めるところかどうか: isTryingToCloseDoorNow
 
 ### HouseKeeper.java の実行結果
 
@@ -131,4 +129,4 @@ https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/03.i
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/03.instance-method/src/jp/freestyles/mid/instance/method/house
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/03.instance-method/src/mid/instance/method/house

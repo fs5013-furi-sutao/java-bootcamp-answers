@@ -1,4 +1,4 @@
-package jp.freestyles.mid.instance.method.house;
+package mid.instance.method.house;
 
 public class House {
     

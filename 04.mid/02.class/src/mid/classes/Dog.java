@@ -1,4 +1,4 @@
-package jp.freestyles.mid.classes;
+package mid.classes;
 
 public class Dog {
     
