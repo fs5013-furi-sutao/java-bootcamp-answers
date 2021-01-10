@@ -1,67 +1,110 @@
-## ミニ課題: リファクタリング（時間: 20 分）
+## 学習
 
-Order クラスの calcWholePrice メソッドの処理について、
-以下の仕様が伝わりやすくなるように説明変数を導入して修正（リファクタリング）しなさい
+### Java のクラスメソッド
 
-### 金額総計（wholePrice）の計算方法
-以下、A と B の合計に消費税（10%）を掛けたものに送料を加算
+クラスメソッドは、静的メソッド、もしくは static メソッドとも呼ばれます。
 
-### A. 合計額
-- 価格 × 個数
+Java のクラスメソッドとは何かを Web で調べてください。検索キーワードは、「 [java クラスメソッド](https://www.google.com/search?q=java+クラスメソッド) 」です。
+3 種類ぐらい説明記事やサンプルコードを読んで、Java のクラスメソッドとは何か、クラスメソッドの使い方をつかみましょう。
 
-### B. ボリューム割引
-- 500 個以上は、価格の 5% を割引
+## 練習問題 01: クラスメソッドの作成（時間: 20 分）
 
-### C. 送料
-- 合計額の 10%、ただし、上限は 10,000 円
+次の 2 つのクラスを作成しなさい
 
+1. FigureManager クラス
+2. Figure クラス
 
-```java title=src/PriceCalculator.java
-public class PriceCalculator {
-    public static void main(String[] args) {
+### 1. FigureManager クラス
 
-        int itemPrice = 9800;
-        int quantity = 580;
-        Order order = new Order(itemPrice, quantity);
-        int wholePrice = order.calcWholePrice();
-        System.out.printf(
-            "%d 円の商品を %d 個注文 => %d 円（税込）%n",
-            itemPrice , quantity, wholePrice
-        );
-    }
-}
+以下の処理を行う main メソッドを持つクラス
 
-class Order {
-    private int itemPrice;
-    private int quantity;
+- 以下の変数を宣言し、値を代入
 
-    public Order(int itemPrice, int quantity) {
-        this.itemPrice = itemPrice;
-        this.quantity = quantity;
-    }
+  - 三角形の底辺: 10 cm
+  - 三角形の高さ: 20 cm
+  - 三角形の面積: 上記、底辺と高さのデータから Figure クラスのクラスメソッドで算出した面積
 
-    public int calcWholePrice() {
-        return Long.valueOf(Math.round(
-                (this.itemPrice * this.quantity
-                    - this.itemPrice 
-                    * Math.max(0, this.quantity - 500) 
-                    * 0.05
-                ) * 1.10
-                + Math.min(
-                    this.itemPrice * this.quantity * 0.1, 
-                    10000
-                )
-            )).intValue();
-    }
-}
-```
+### 2. Figure クラス
 
-### PriceCalculator の実行結果
+三角形の面積を算出するクラスメソッド calcTriangleArea を持つ
 
-```
-9800 円の商品を 580 個で注文 => 6219280 円（税込）
+### FigureManager.java の実行結果
+
+```console
+底辺が 10.0 cm で、高さが 20.0 cm の三角形の面積 => 100.0
 ```
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/03.primary/01.explaining-variable/src/PriceCalculator.java
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/04.class-method/src/mid/classes/method/figure
+
+## 練習問題 02: 誤った箇所の修正（時間: 20 分）
+
+次の 2 つのクラス、カウンターを表すクラスと操作するクラスについて、誤っている箇所を修正しなさい
+
+### 1. Counter.java
+
+```java
+package mid.classes.method.forfixing;
+
+public class Counter {
+    private static int count;
+
+    static {
+        count = 0;
+    }
+
+    public Counter() {
+
+        ++this.count;
+
+        System.out.printf(
+                "Counter インスタンスが生成されました: count=%d %n",
+                this.count
+            );
+    }
+
+    public static void showCounter() {
+        System.out.printf("counter=%d %n", this.count);
+    }
+}
+```
+
+### 2. Counter.java
+
+```java
+package mid.classes.method.forfixing;
+
+public class CounterUser {
+
+    private static final int INSTANCE_NUMS = 6;
+
+    public static void main(String[] args) {
+
+        Counter[] counters = new Counter[INSTANCE_NUMS];
+
+        for (Counter counter : counters) {
+            counter = new Counter();
+        }
+
+        Counter obj = new Counter();
+        obj.showCounter();
+    }
+}
+```
+
+### CounterUser.java の実行結果
+
+```console
+Counter インスタンスが生成されました: count=1
+Counter インスタンスが生成されました: count=2
+Counter インスタンスが生成されました: count=3
+Counter インスタンスが生成されました: count=4
+Counter インスタンスが生成されました: count=5
+Counter インスタンスが生成されました: count=6
+counter=6
+```
+
+## 解答例
+
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/04.class-method/src/mid/classes/method/forfixing
