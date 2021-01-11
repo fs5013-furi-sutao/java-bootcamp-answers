@@ -1,6 +1,18 @@
-package mid.minimize.accessor;
+package mid.javadoc;
 
+/**
+ * 業務クラス
+ * 処理の起点となるクラス
+ * @author Furi Sutao
+ * @version 1.0
+ */
 public class Business {
+
+    /**
+    * main メソッド
+    * 従業員インスタンスを生成し、内容を表示する
+     * @param args 使用しない
+     */
     public static void main(String[] args) {
 
         Division division = new Division()
