@@ -71,4 +71,4 @@ public class Business {
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/08-auto-generated-getter-setter-by-ide/src/mid/auto/ide
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/08.auto-generated-getter-setter-by-ide/src/mid/auto/ide

@@ -55,4 +55,4 @@ ID:777 山本一郎（3 歳）さんの預金残高は 5211111110 円です.
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/07-pojo-beans-dto-entity-etc/src/mid/pojo
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/04.mid/07.pojo-beans-dto-entity-etc/src/mid/pojo
