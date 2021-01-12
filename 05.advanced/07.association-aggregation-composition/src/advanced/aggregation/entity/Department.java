@@ -19,6 +19,6 @@ public class Department {
     }
 
     public List<GraduateStudent> getStudents() {
-        return students;
+        return this.students;
     }
 }

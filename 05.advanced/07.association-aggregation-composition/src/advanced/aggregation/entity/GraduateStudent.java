@@ -14,6 +14,5 @@ public class GraduateStudent {
         this.name = name;
         this.id = id;
         this.dept = dept;
-
     }
 }
