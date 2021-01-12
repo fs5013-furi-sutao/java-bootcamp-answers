@@ -114,4 +114,4 @@ Engine stopped.
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/05.advanced/relationship/src/advanced/relationship
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/05.advanced/08.is-a-has-a-part-of/src/advanced/relationship
