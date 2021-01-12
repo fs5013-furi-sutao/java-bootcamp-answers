@@ -187,6 +187,9 @@ public class Higher {
 }
 ```
 
+テストコード  
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/05.advanced/10.junit-test/src/Higher.java
+
 ## テストの実行
 
 このテストコードを実行してみます。
