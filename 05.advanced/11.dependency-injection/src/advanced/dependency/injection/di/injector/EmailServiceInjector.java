@@ -7,7 +7,7 @@ import advanced.dependency.injection.di.service.EmailServiceImpl;
 public class EmailServiceInjector implements IMessageServiceInjector {
 
     @Override
-    public IConsumer getConsumer() {
-        return new MyDiApplication(new EmailServiceImpl());
-    }
+	public IConsumer getConsumer() {
+		return new MyDiApplication(new EmailServiceImpl());
+	}
 }

@@ -7,8 +7,8 @@ import advanced.dependency.injection.di.injector.SMSServiceInjector;
 
 public class MyMessageDiTest {
     public static void main(String[] args) {
-        String message  = "Hi Pankaj";
-        String email = "panka@abc.com";
+        String message  = "こんにちは、山本一郎さん！";
+        String email = "i_yamamoto@abc.com";
         String phone = "";
 
         IMessageServiceInjector injector = null;

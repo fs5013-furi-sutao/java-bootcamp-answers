@@ -15,17 +15,20 @@ public class MyDiApplicationJUnitTest {
 
     @Before
     public void setUp() {
-        //mock the injector with anonymous class
+        // 匿名クラスで Injector をモックする
 		injector = new IMessageServiceInjector() {
 			
 			@Override
 			public IConsumer getConsumer() {
-				//mock the message service
+				// メッセージ Service をモックする
 				return new MyDiApplication(new IMessageService() {
 					
 					@Override
-					public void sendMessage(String msg, String rec) {
-						System.out.println("Mock Message Service implementation");
+					public void sendMessage(String message, String receiver) {
+						System.out.format(
+							    "[モック] 送信先: %s, メッセージ: %s %n",
+								receiver, message 
+							);
 						
 					}
 				});
@@ -36,7 +39,10 @@ public class MyDiApplicationJUnitTest {
     @Test
 	public void test() {
 		IConsumer consumer = injector.getConsumer();
-		consumer.processMessages("Hi Pankaj", "pankaj@abc.com");
+		consumer.processMessages(
+				"こんにちは、山本一郎さん！", 
+				"i_yamamoto@abc.com"
+			);
 	}
 	
 	@After

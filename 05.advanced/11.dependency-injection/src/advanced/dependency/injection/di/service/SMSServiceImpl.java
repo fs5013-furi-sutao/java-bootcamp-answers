@@ -6,7 +6,7 @@ public class SMSServiceImpl implements IMessageService {
     public void sendMessage(String message, String reciever) {
         // SMS 送信のビジネスロジック
         System.out.format(
-                "SMS sent to %s with Message= %s %n",
+                "[SMS] 送信先: %s, メッセージ: %s %n",
                 reciever, message 
             );
     }

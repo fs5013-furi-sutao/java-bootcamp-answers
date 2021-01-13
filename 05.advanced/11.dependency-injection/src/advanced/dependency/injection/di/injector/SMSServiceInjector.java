@@ -5,8 +5,9 @@ import advanced.dependency.injection.di.consumer.MyDiApplication;
 import advanced.dependency.injection.di.service.SMSServiceImpl;
 
 public class SMSServiceInjector implements IMessageServiceInjector {
+    
     @Override
-    public IConsumer getConsumer() {
-        return new MyDiApplication(new SMSServiceImpl());
-    }
+	public IConsumer getConsumer() {
+		return new MyDiApplication(new SMSServiceImpl());
+	}
 }

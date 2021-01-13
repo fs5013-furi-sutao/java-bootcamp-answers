@@ -3,11 +3,11 @@ package advanced.dependency.injection.di.service;
 public class EmailServiceImpl implements IMessageService {
     
     @Override
-    public void sendMessage(String message, String reciever) {
+    public void sendMessage(String message, String receiver) {
         // メール送信のビジネスロジック
         System.out.format(
-                "Email sent to %s with Message= %s %n",
-                reciever, message 
+                "[Email] 送信先: %s, メッセージ: %s %n",
+                receiver, message 
             );
     }
  }
