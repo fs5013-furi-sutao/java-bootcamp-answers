@@ -70,7 +70,7 @@ public class DataChecker {
 
 ### DataChecker.java の実行結果
 
-```java
+```console
 [1] 値が設定されていません.
 [2] 値が設定されていません.
 [3] 値が設定されています.
