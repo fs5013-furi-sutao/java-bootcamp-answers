@@ -1,7 +1,7 @@
 package advanced.nested.classes;
 
 /**
- * static なインナークラスを呼び出すサンプル
+ * static なネストクラスを呼び出すサンプル
  * @param args
  */
 public class EmployeeManager {
@@ -40,5 +40,4 @@ public class EmployeeManager {
             validator.showValidatedResult(employee);
         }
     }
-
 }

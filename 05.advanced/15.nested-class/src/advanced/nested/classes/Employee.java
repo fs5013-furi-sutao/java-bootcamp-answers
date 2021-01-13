@@ -2,19 +2,19 @@ package advanced.nested.classes;
 
 public class Employee {
 
-    private static int MAX_ID;
+    private static int staticCounter;
     private int id;
     private String name;
     private String email;
     private String address;
 
-    static {
-        MAX_ID = 0;
+    {
+        incrementStaticCounter();
+        assignId();
     }
 
     Employee(String name, String email, String address) {
     
-          this.id = ++MAX_ID;
           this.name = name;
           this.email = email;
           this.address = address;
@@ -34,6 +34,14 @@ public class Employee {
 
     public String getAddress() {
         return this.address;
+    }
+
+    private void assignId() {
+        this.id = staticCounter;
+    }
+
+    private static void incrementStaticCounter() {
+        staticCounter++;
     }
 
     static class Validator {
