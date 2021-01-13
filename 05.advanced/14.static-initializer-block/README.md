@@ -6,6 +6,43 @@ Static 初期化ブロックとは何かを Web で調べてください。
 検索キーワードは、「 [java static 初期化ブロック](https://www.google.com/search?q=java+static+初期化ブロック) 」です。
 3 種類ぐらい説明記事やサンプルコードを読んで、Static 初期化ブロックとは何か、Static 初期化ブロックの使い方をつかみましょう。
 
+### Static ブロック
+
+静的のブロックを初期化するために使用される静的変数を。静的の変数を宣言時に直接初期化することができ、我々は複数行の処理を行うために必要としている状況があります。
+
+このような場合、静的ブロックが役立ちます。
+
+静的変数が初期化中に追加のマルチステートメントロジックを必要とする場合は、静的ブロックを使用できます。
+
+#### マルチステートメントロジックの例
+
+```java
+public class StaticBlockDemo {
+    public static List<String> ranks = new LinkedList<>();
+
+    static {
+        ranks.add("Lieutenant");
+        ranks.add("Captain");
+        ranks.add("Major");
+    }
+
+    static {
+        ranks.add("Colonel");
+        ranks.add("General");
+    }
+}
+```
+
+## Static ブロックが必要になるケース
+
+- Static 変数の初期化に、割り当て以外の追加のロジックが必要な場合
+- Static 変数の初期化がエラーを起こしやすく、例外処理が必要な場合
+
+### 参考: 覚えておくべきキーポイント
+
+- クラスは複数の Static ブロックを持つことができる
+- Static フィールドと Static ブロックは、クラスに存在するのと同じ順序で解決および実行される
+
 ## 練習問題（時間: 20 分）
 
 次のクラス InitializationExecutor を実行すると、
