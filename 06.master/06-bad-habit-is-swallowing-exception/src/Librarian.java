@@ -15,7 +15,7 @@ public class Librarian {
             Book targetBook = library.getBookIndexOf(i);
             try {
                 targetBook.showDetails();
-            } catch (Exception e) {
+            } catch (NullPointerException e) {
                 // 業務アプリなどでは一般的に次のような対策をする
                 // 1. アプリを落とすか
                 // 2. 上流に throw するか
