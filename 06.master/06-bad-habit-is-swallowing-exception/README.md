@@ -194,12 +194,12 @@ public class Librarian {
 
 ```console
 [Title] 檸檬, [Author の登録] あり
-java.lang.NullPointerException
+Exception in thread "main" java.lang.Exception: java.lang.NullPointerException
+        at Librarian.main(Librarian.java:23)
+Caused by: java.lang.NullPointerException
         at Book.showIsBlankAuthor(Book.java:31)
         at Book.showDetails(Book.java:27)
         at Librarian.main(Librarian.java:17)
-[Title] ニコマコス倫理学, [Author の登録] あり
-[Title] こころ, [Author の登録] あり
 ```
 
 ## 解答例

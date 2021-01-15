@@ -1,5 +1,5 @@
 public class Librarian {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Book[] books = {
                 new Book("檸檬", "梶井基次郎"),
@@ -16,7 +16,13 @@ public class Librarian {
             try {
                 targetBook.showDetails();
             } catch (Exception e) {
-                e.printStackTrace();
+                // 業務アプリなどでは一般的に次のような対策をする
+                // 1. アプリを落とすか
+                // 2. 上流に throw するか
+                // 3. ログに記録するか
+                //
+                // ・・・いずれにしても例外に気づけるようにする
+                throw new Exception(e);
             }
         }  
     }
