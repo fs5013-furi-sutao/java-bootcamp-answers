@@ -1,0 +1,39 @@
+package master.original.excep.util;
+
+import master.original.excep.exception.AppException;
+
+public class Logger {
+
+    public enum LogType {
+        DEBUG("DEBUG"),
+        INFO("INFO"),
+        WARN("WARN"),
+        ERROR("ERROR"),;
+
+        private String name;
+
+        private LogType(String name) {
+            this.name = name;
+        }
+
+        private String getName() {
+            return this.name;
+        }
+    }
+
+    public static void log(LogType type, String message) {
+
+        System.out.format(
+                ":: [%s] %s %n", type.getName(), message);
+    }
+
+    public static void log(LogType type, AppException e) {
+
+        log(type, e.getMessage());
+        log(type, e.getClass().getName());
+        log(type, e.getCause().getClass().getName());
+        for (StackTraceElement element : e.getStackTrace()) {
+            log(type, "  at " + element.toString());
+        }
+    }
+}
