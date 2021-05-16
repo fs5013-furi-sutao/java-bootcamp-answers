@@ -27,4 +27,4 @@ public class QuickFixTester {
 
 ## 解答例
 
-https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/11.11-vscode-quick-fix/src/QuickFixTester.java
+https://github.com/fs5013-furi-sutao/java-bootcamp-answers/blob/main/02.entry/11.vscode-quick-fix/src/QuickFixTester.java
