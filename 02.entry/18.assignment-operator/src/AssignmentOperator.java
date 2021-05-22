@@ -9,11 +9,11 @@ public class AssignmentOperator {
         target = a;
         System.out.printf("target = a: %d %n", target);
 
-        // 値の代入に「=+」を使う assign value using =+
+        // 値の代入に「=+」を使う assign value using +=
         target += a;
         System.out.printf("target += a: %d %n", target);
 
-        // 値の代入に「=*」を使う assign value using =*
+        // 値の代入に「=*」を使う assign value using *=
         target *= a;
         System.out.printf("target *= a: %d %n", target);
     }
