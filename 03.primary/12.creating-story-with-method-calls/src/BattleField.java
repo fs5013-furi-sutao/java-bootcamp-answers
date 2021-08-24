@@ -40,7 +40,7 @@ public class BattleField {
             String[] players) {
 
         Random rand = new Random();
-        return players[rand.nextInt(2)];
+        return players[rand.nextInt(players.length)];
     }
 
     private static String getDefenderName(
