@@ -1,6 +1,8 @@
 import java.util.Random;
 
 public class BattleField {
+    private static final int MAX_TURN_NO = 5;
+    
     public static void main(String[] args) {
 
         BattleField app = new BattleField();
@@ -8,7 +10,7 @@ public class BattleField {
 
         String[] players = { "山本", "浜田", };
 
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= MAX_TURN_NO; i++) {
 
             String attackerName 
                 = getRandomAttacker(players);
