@@ -1,19 +1,19 @@
 package mid.access.modifier;
 
-class Dog {
+public class Dog {
     
-    String name;
-    int age;
-    String dogType;
+    private String name;
+    private int age;
+    private String dogType;
 
-    Dog(String name, int age, String dogType) {
+    public Dog(String name, int age, String dogType) {
 
         this.name = name;
         this.age = age;
         this.dogType = dogType;
     }
 
-    void showDetails() {
+    public void showDetails() {
         System.out.format("%s の %s は %d 歳です. %n",
                 this.dogType, 
                 this.name, 
