@@ -12,5 +12,4 @@ public class IdeAutoCompleted {
         System.out.println();
         System.out.printf("ぼくの体重は %dKg です.%n", myWeightKg);
     }
-    }
 }

@@ -22,8 +22,5 @@ public class ArithmeticOperator {
 
         // 余算演算子 modulo operator
         System.out.printf("a %% b = %d %n", a % b);
-
-        // 文字列結合 string concatenate
-        System.out.println("\"a\" + \"b\" = " + a + b);
     }
 }

@@ -6,7 +6,7 @@ public class UntilBlankLooper {
         Scanner stdin = new Scanner(System.in);
         final String BLANK = ""; 
 
-        String inputtedString;
+        String inputtedString = null;
         int count = 0;
 
         System.out.println(

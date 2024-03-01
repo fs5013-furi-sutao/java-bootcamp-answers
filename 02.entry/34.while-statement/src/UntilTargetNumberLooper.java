@@ -5,6 +5,7 @@ public class UntilTargetNumberLooper {
 
         Scanner stdin = new Scanner(System.in);
         final int TARGET_NUM = 77;
+        
         String inputtedStrNumber = null;
         int parsedNumber = 0; 
         int count = 0;
